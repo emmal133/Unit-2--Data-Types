@@ -28,3 +28,17 @@ elif answer == "excellent":
         tip_percentage = 0.25
 print((bill_amount * tip_percentage)+bill_amount)
 
+number=int(input("Enter a number: "))
+factors=[]
+for i in range(1, number + 1):
+    if number % i == 0:
+        factors.append(i)
+print("The factors of", number, "are:", factors)
+
+
+import math
+
+number=int(input("Enter a number: "))
+number2=int(input("Enter a second number: "))
+gcf=math.gcd(number, number2)
+print("The GCF of", number, "and", number2, "is:", gcf)
