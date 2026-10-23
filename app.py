@@ -40,5 +40,7 @@ import math
 
 number=int(input("Enter a number: "))
 number2=int(input("Enter a second number: "))
-gcf=math.gcd(number, number2)
+for i in range (1, min(number, number2) + 1):
+    if number % i == 0 and number2 % i == 0:
+        gcf = i
 print("The GCF of", number, "and", number2, "is:", gcf)
